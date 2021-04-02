@@ -6,3 +6,4 @@
   - Didn't like "." in hostname. So changed hostname and re-ran
   - couldn't rename /boot to /boot.bak (resource busy error).  I edited the script to skip this
   
+1. [flox](https://beta.floxdev.com/docs/tour/tour-1/#install-flox)

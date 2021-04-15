@@ -1,8 +1,10 @@
 1. Started with Ubuntu system on Contabo.net
 
-1. [nix-os-infect](https://github.com/elitak/nixos-infect) This script is handy. I ran this to convert to NixOS. A few hiccups:
+1. from mac `ssh-copy-id -i id_rsa.pub root@nix.awani.org`
+2. Try `ssh root@nix.awani.org`
+3. [nix-os-infect](https://github.com/elitak/nixos-infect) This script is handy. I ran this to convert to NixOS. A few hiccups:
     - Ignored a Warning about not supporting multiuser Nix setup or something like that
-    - Didn't like "." in hostname. So changed hostname and re-ran
+    - Didn't like "." in hostname. So changed hostname with `hostnamectl set-hostname nix` and re-ran
     - couldn't rename /boot to /boot.bak (resource busy error).  I edited the script to skip this
 
 1. Looks like partitioning disks and creating filesystems is done the traditional way. No reproducible, functional NixOS magic here.  I didn't change the partitions. Kept what nixos-infect left me, which seems to be the partitioning that was in effect under Ubuntu. 
